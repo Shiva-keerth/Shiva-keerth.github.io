@@ -1,56 +1,106 @@
-# 🚀 Generative AI Engineering Portfolio
+# 🚀 Ganti Shiva Keerth — Generative AI Engineering Portfolio
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Status](https://img.shields.io/badge/Status-Deployed-brightgreen?style=for-the-badge)
+![Deployed](https://img.shields.io/badge/Deployed-GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)
+![Focus](https://img.shields.io/badge/Focus-Generative_AI_%26_Agentic_Systems-8A2BE2?style=for-the-badge)
 
-Welcome to the source code for my interactive **Generative AI & Machine Learning Portfolio**. This repository houses the frontend architecture of my personal website, designed to showcase my enterprise AI projects, system architectures, and technical blogs.
+> The source code for my interactive **AI Engineering Portfolio Website** — a fully custom, framework-free frontend built to showcase enterprise Agentic AI projects, RAG architectures, and LLM pipelines.
 
----
-
-## 🎨 UI / UX Architecture
-
-The portfolio is engineered from scratch using vanilla web technologies, completely avoiding heavy frameworks to ensure lightning-fast load times and a perfect Lighthouse performance score.
-
-*   **Dark Glassmorphism Aesthetics:** Utilizes deep space gradients (`#0a1128` to `#162244`) with neon cyan (`#00ffb4`) and electric blue (`#018bff`) accents to reflect a modern AI/Cyberpunk theme.
-*   **Dynamic Interactive Canvas:** Features a custom JavaScript background animation simulating a neural network graph / particle system that responds to cursor movement.
-*   **Responsive Grid Layout:** CSS Grid and Flexbox are used heavily to ensure pixel-perfect rendering across desktop, tablet, and mobile devices.
+🔗 **Live:** [shiva-keerth.github.io](https://shiva-keerth.github.io)
 
 ---
 
-## 🛠️ Featured Projects Highlighted
+## 🎨 Design System & UI Architecture
 
-The portfolio actively links to and embeds live demos of my core Agentic AI architectures:
+Built entirely from scratch using **vanilla HTML5, CSS3, and JavaScript** — no React, no Tailwind, no heavy frameworks. Every pixel is intentional.
 
-1.  **OmniMind AI (Enterprise Knowledge Graph):** A multi-modal Graph-RAG system utilizing Neo4j, Groq Whisper, and LangChain.
-2.  **Dual-Domain Agentic RAG Platform:** An autonomous routing system using LangGraph and ChromaDB to serve specialized Healthcare and Finance context.
-3.  **SkillMatch AI:** An HR-Tech pipeline utilizing TF-IDF cosine similarity and Llama-3 to score resumes against job descriptions.
-4.  **Agentic Email Assistant:** An autonomous email processing and drafting system with human-in-the-loop validation.
+### Visual Language
+*   **Dark Glassmorphism Theme:** Deep space gradient backgrounds (`#0a1128` → `#162244`) with frosted glass card effects using `backdrop-filter: blur()`
+*   **Neon Accent Palette:** Neon cyan (`#00ffb4`) for highlights and electric blue (`#018bff`) for interactive elements — inspired by cyberpunk/AI aesthetics
+*   **Premium Typography:** Google Fonts `Inter` — weights 300 (body), 600 (labels), 800 (headings)
+
+### Dynamic Elements
+*   **Neural Network Canvas Animation:** Custom JavaScript particle system on `<canvas>` rendering an animated knowledge graph that responds to cursor position in real time
+*   **Scroll-triggered Reveal Animations:** `IntersectionObserver` API used to trigger fade-in and slide-up transitions on project cards as they enter the viewport
+*   **Hover Microinteractions:** Card lift, glow border animations, and button scale transforms on all interactive elements
+*   **Responsive Grid:** CSS Grid + Flexbox ensuring pixel-perfect layout across desktop (1440px), tablet (768px), and mobile (375px) breakpoints
 
 ---
 
-## 🚀 Live Deployment
+## 🧠 Featured Projects Showcase
 
-The portfolio is continuously deployed and hosted. 
-*(Live link is currently private/whitelisted for recruiters).*
+| Project | Stack | Description | Live |
+| :--- | :--- | :--- | :--- |
+| **OmniMind AI** | Neo4j, LangChain, Groq Whisper, Llama-3.3-70B | Enterprise Knowledge Graph + Graph-RAG system converting meeting audio into structured, queryable intelligence | [HuggingFace](https://huggingface.co/spaces/farracer/OmniMind-AI-Enterprise) |
+| **Dual-Domain Agentic RAG** | LangGraph, ChromaDB, Tavily, Docker, AWS EC2 | Multi-agent autonomous RAG router handling Healthcare & Finance domain queries with LangGraph ReAct agents | GitHub |
+| **SkillMatch AI** | FastAPI, Supabase, TF-IDF, Groq Llama-3 | HR-Tech pipeline using 6-signal cosine similarity scoring to match candidates to job descriptions with 3-tier RBAC | GitHub |
+| **Agentic Email Assistant** | APScheduler, IMAP, Groq, Pydantic | Autonomous email triage and drafting pipeline with human-in-the-loop review and structured JSON retry logic | GitHub |
+| **LLMOps Dashboard** | Streamlit, SQLite, Plotly | Real-time observability dashboard tracking LLM latency, token usage, verdict distribution, and evaluation funnels | GitHub |
 
-### Local Development Setup
-To run the portfolio locally and test CSS changes:
-1. Clone the repository:
+---
+
+## 🛠️ Technical Stack
+
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Structure** | HTML5 (Semantic) | SEO-optimized page layout with ARIA accessibility attributes |
+| **Styling** | CSS3 (Custom Variables) | Design tokens, glassmorphism effects, responsive grid |
+| **Interactivity** | Vanilla JavaScript (ES6+) | Canvas animation, scroll triggers, form handling |
+| **Fonts** | Google Fonts (Inter) | Premium typography, loaded async for performance |
+| **Deployment** | GitHub Pages | Auto-deployed on `main` branch push, custom domain support |
+
+---
+
+## 📁 Repository Structure
+
+```
+Shiva-keerth.github.io/
+├── index.html              # Main entry point (semantic HTML5, all sections)
+├── style.css               # Complete design system (variables, components, responsive)
+├── script.js               # Canvas animation, scroll events, interactivity
+├── frame_000.jpg           # Portfolio screenshots / demo frames
+├── frame_001.jpg
+│   ...
+├── frame_012.jpg
+└── portfolio sample.mp4    # Video walkthrough of the portfolio
+```
+
+---
+
+## ⚡ Performance & Best Practices
+
+*   **Zero framework overhead** — pure HTML/CSS/JS for sub-100ms first contentful paint
+*   **Semantic HTML5** — `<section>`, `<article>`, `<nav>`, `<main>` for screen reader accessibility
+*   **Async font loading** — prevents render-blocking on Google Fonts
+*   **CSS Custom Properties** — single source of truth for all colors, spacing, and animation timings
+*   **IntersectionObserver** — lazy-triggers animations only when elements are in viewport (no scroll jank)
+
+---
+
+## 💻 Local Development
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Shiva-keerth/AI-Portfolio.git
-   cd AI-Portfolio
+   git clone https://github.com/Shiva-keerth/Shiva-keerth.github.io.git
+   cd Shiva-keerth.github.io
    ```
-2. You can open `index.html` directly in any modern browser, or use a local live server:
+
+2. **Open directly or use a local server:**
    ```bash
-   # If using python
+   # Option 1 — Python live server
    python -m http.server 8000
+
+   # Option 2 — VS Code Live Server extension (recommended)
+   # Right-click index.html → "Open with Live Server"
    ```
-3. Navigate to `http://localhost:8000` in your browser.
+
+3. Navigate to `http://localhost:8000`
 
 ---
 
 ## 🤝 Connect With Me
 *   **GitHub:** [Shiva-keerth](https://github.com/Shiva-keerth)
+*   **LinkedIn:** [Shiva Keerth G](https://www.linkedin.com/in/shiva-keerth-9574b92a6/)
 *   **Focus:** Generative AI, RAG Systems, Agentic AI, and Machine Learning.
